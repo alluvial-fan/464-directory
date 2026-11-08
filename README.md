@@ -1,1 +1,2 @@
-# 464-directory
+# GEOG 464 — Student Project Directory
+
