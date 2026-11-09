@@ -49,6 +49,17 @@
   }
   li a:hover, li a:focus-visible { border-color: var(--accent); outline: none; }
   li a:hover .title { text-decoration: underline; text-underline-offset: 2px; }
+  /* Name-only entries (no url yet): same card, but nothing to click. */
+  li.waiting {
+    display: flex;
+    align-items: baseline;
+    gap: .85rem;
+    padding: .85rem 1rem;
+    background: var(--card);
+    border: 1px dashed var(--line);
+    border-radius: 10px;
+  }
+  li.waiting .title { font-weight: 500; color: var(--muted); }
   .num { min-width: 1.6rem; font-variant-numeric: tabular-nums; font-size: .8rem; color: var(--muted); }
   .body { display: flex; flex-direction: column; min-width: 0; }
   .title { font-weight: 600; }
@@ -118,24 +129,32 @@
       </span>
     </a></li>
 
-    <li><a href="https://destinbb.github.io/GEOG464/site/" target="_blank" rel="noopener">
+    <li class="waiting">
       <span class="num">05</span>
+      <span class="body">
+        <span class="title">Clarissa <span class="pending">Site coming soon</span></span>
+        <span class="handle">No link yet</span>
+      </span>
+    </li>
+
+    <li><a href="https://destinbb.github.io/GEOG464/site/" target="_blank" rel="noopener">
+      <span class="num">06</span>
       <span class="body">
         <span class="title">Destin: Montreal: Bicycle Network</span>
         <span class="handle">destinbb.github.io/GEOG464</span>
       </span>
     </a></li>
 
-    <li><a href="https://dyson-r.github.io/GEOG_464_My_project/site/" target="_blank" rel="noopener">
-      <span class="num">06</span>
+    <li class="waiting">
+      <span class="num">07</span>
       <span class="body">
-        <span class="title">Dyson: Temperature and Public Trees in the Different Boroughs of Montreal</span>
-        <span class="handle">dyson-r.github.io/GEOG_464_My_project</span>
+        <span class="title">Fariha <span class="pending">Site coming soon</span></span>
+        <span class="handle">No link yet</span>
       </span>
-    </a></li>
+    </li>
 
     <li><a href="https://fiorella-francione.github.io/geog464-lab5/site/" target="_blank" rel="noopener">
-      <span class="num">07</span>
+      <span class="num">08</span>
       <span class="body">
         <span class="title">Fiorella: Parking Greening Conversion Priorities</span>
         <span class="handle">fiorella-francione.github.io/geog464-lab5</span>
@@ -143,7 +162,7 @@
     </a></li>
 
     <li><a href="https://gianniscaramuzzi.github.io/geog464-lab5-project/A2_Scaramuzzi/site/" target="_blank" rel="noopener">
-      <span class="num">08</span>
+      <span class="num">09</span>
       <span class="body">
         <span class="title">Gianni: Building roofs near greenspace</span>
         <span class="handle">gianniscaramuzzi.github.io/geog464-lab5-project/A2_Scaramuzzi</span>
@@ -151,7 +170,7 @@
     </a></li>
 
     <li><a href="https://github.com/kaitrodney-png" target="_blank" rel="noopener">
-      <span class="num">09</span>
+      <span class="num">10</span>
       <span class="body">
         <span class="title">Kait <span class="pending">Site coming soon</span></span>
         <span class="handle">github.com/kaitrodney-png</span>
@@ -159,15 +178,31 @@
     </a></li>
 
     <li><a href="https://mylonask24.github.io/464/site/" target="_blank" rel="noopener">
-      <span class="num">10</span>
+      <span class="num">11</span>
       <span class="body">
         <span class="title">Kostadinos: Forest Fires in Greece</span>
         <span class="handle">mylonask24.github.io/464</span>
       </span>
     </a></li>
 
+    <li class="waiting">
+      <span class="num">12</span>
+      <span class="body">
+        <span class="title">Leonardo <span class="pending">Site coming soon</span></span>
+        <span class="handle">No link yet</span>
+      </span>
+    </li>
+
+    <li class="waiting">
+      <span class="num">13</span>
+      <span class="body">
+        <span class="title">Lukas <span class="pending">Site coming soon</span></span>
+        <span class="handle">No link yet</span>
+      </span>
+    </li>
+
     <li><a href="https://alluvial-fan.github.io/fwdm/site/" target="_blank" rel="noopener">
-      <span class="num">11</span>
+      <span class="num">14</span>
       <span class="body">
         <span class="title">Max: Walking distance to Montreal's parks and metro stations</span>
         <span class="handle">alluvial-fan.github.io/fwdm</span>
@@ -175,7 +210,7 @@
     </a></li>
 
     <li><a href="https://myastjames-con.github.io/Term-project/site/" target="_blank" rel="noopener">
-      <span class="num">12</span>
+      <span class="num">15</span>
       <span class="body">
         <span class="title">Mya: Amphibian habitats and protected areas</span>
         <span class="handle">myastjames-con.github.io/Term-project</span>
@@ -183,15 +218,23 @@
     </a></li>
 
     <li><a href="https://phishy-jpeg.github.io/Quebec-Wildfire-Visualizer/" target="_blank" rel="noopener">
-      <span class="num">13</span>
+      <span class="num">16</span>
       <span class="body">
         <span class="title">Neve: Quebec Wildfire Visualizer</span>
         <span class="handle">phishy-jpeg.github.io/Quebec-Wildfire-Visualizer</span>
       </span>
     </a></li>
 
+    <li><a href="https://dyson-r.github.io/GEOG_464_My_project/site/" target="_blank" rel="noopener">
+      <span class="num">17</span>
+      <span class="body">
+        <span class="title">Ryan: Temperature and Public Trees in the Different Boroughs of Montreal</span>
+        <span class="handle">dyson-r.github.io/GEOG_464_My_project</span>
+      </span>
+    </a></li>
+
     <li><a href="https://sasharohac.github.io/montreal-catwalk/site/" target="_blank" rel="noopener">
-      <span class="num">14</span>
+      <span class="num">18</span>
       <span class="body">
         <span class="title">Sasha: Montréal catwalk</span>
         <span class="handle">sasharohac.github.io/montreal-catwalk</span>
@@ -199,7 +242,7 @@
     </a></li>
 
     <li><a href="https://shaynnonn.github.io/montrealconstructionobservation/" target="_blank" rel="noopener">
-      <span class="num">15</span>
+      <span class="num">19</span>
       <span class="body">
         <span class="title">Shaynnon: Montréal construction observation</span>
         <span class="handle">shaynnonn.github.io/montrealconstructionobservation</span>
@@ -207,15 +250,23 @@
     </a></li>
 
     <li><a href="https://shrabonidey419.github.io/464/site/" target="_blank" rel="noopener">
-      <span class="num">16</span>
+      <span class="num">20</span>
       <span class="body">
         <span class="title">Shraboni: How far is the metro? Walking access to STM stations in Montréal</span>
         <span class="handle">shrabonidey419.github.io/464</span>
       </span>
     </a></li>
 
+    <li class="waiting">
+      <span class="num">21</span>
+      <span class="body">
+        <span class="title">Shreya <span class="pending">Site coming soon</span></span>
+        <span class="handle">No link yet</span>
+      </span>
+    </li>
+
     <li><a href="https://github.com/simoncarbonneau" target="_blank" rel="noopener">
-      <span class="num">17</span>
+      <span class="num">22</span>
       <span class="body">
         <span class="title">Simon <span class="pending">Site coming soon</span></span>
         <span class="handle">github.com/simoncarbonneau</span>
@@ -225,7 +276,7 @@
   </ol>
 
   <footer>
-    <p><!-- count:start -->17 projects listed (2 sites coming soon).<!-- count:end --></p>
+    <p><!-- count:start -->22 projects listed (7 sites coming soon).<!-- count:end --></p>
   </footer>
 </main>
 </body>
